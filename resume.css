@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.resume_container {
+  width: 824px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  box-shadow: 6px 4px 20px 6px #eee;
+  background-color: #fff;
+}
+.header_container {
+  position: relative;
+  width: 100%;
+  height: 170px;
+  margin-bottom: 30px;
+  background-color: #265797a4;
+}
+.header_container .user_container {
+  display: flex;
+  justify-content: space-around;
+  width: 460px;
+  height: 100%;
+  background-color: #2196f3;
+}
+.header_container .user_container .user_name {
+  line-height: 170px;
+  font-size: 25px;
+  color: #fff;
+}
+.header_container .user_container .user_detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  width: 290px;
+  font-size: 15px;
+  color: #fff;
+}
+.header_container .user_container .user_detail span {
+  flex: 50%;
+}
+.header_container .user_container_angel {
+  position: absolute;
+  left: 460px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-width: 85px 0 85px 160px;
+  border-left-color: #2196f3;
+}
+.header_container .user_image {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  margin: 10px;
+}
+.header_container .user_image img {
+  width: 115px;
+}
+.article_container {
+  width: 715px;
+  margin: 0 auto;
+  border: 2px solid #2196f3;
+  font-size: 14px;
+}
+.article_container .common {
+  width: 100%;
+  margin: 10px 0 10px;
+}
+.article_container .common .common_title {
+  width: 80px;
+  margin-left: 10px;
+  border-bottom: 3px solid #2196f3;
+  font-size: 15px;
+  color: #2196f3;
+}
+.article_container .edu_content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+.article_container .skill {
+  margin-top: 10px;
+  padding-left: 30px;
+}
+.article_container .skill ul li {
+  margin-top: 5px;
+}
+.article_container .skill ul li span {
+  color: #ffa500;
+}
+.program {
+  margin: 10px;
+}
+.program p:first-child {
+  font-weight: 700;
+  color: #2196f3;
+}
+.program p {
+  margin-bottom: 5px;
+}
+.program p span {
+  font-weight: 700;
+}
+.program ul {
+  list-style: none;
+  padding-left: 10px;
+}
+.footer {
+  padding-left: 10px;
+}

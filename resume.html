@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="./resume.css" />
+  </head>
+  <body>
+    <div class="resume_container">
+      <div class="header_container">
+        <div class="user_container">
+          <h2 class="user_name">**</h2>
+          <div class="user_detail">
+            <span> 年龄: ** 岁 </span>
+            <span> 电话: 1********** </span>
+            <span> 邮箱: ********* </span>
+            <span> 微信: *********</span>
+            <span>求职意向: 前端开发</span>
+            <span>Github: https://github.com/denight-city</span>
+          </div>
+        </div>
+        <div class="user_container_angel"></div>
+        <div class="user_image">
+          <img src="" alt="" />
+        </div>
+      </div>
+      <article class="article_container">
+        <div class="common">
+          <div class="common_title"><h3>教育经历</h3></div>
+          <div class="edu_content">
+            <span>长江大学</span>
+            <span>应用物理学</span>
+            <span>统招本科</span>
+            <span>CET-4</span>
+          </div>
+        </div>
+        <div class="common">
+          <div class="common_title"><h3>专业技能</h3></div>
+          <div class="skill">
+            <ul>
+              <li>
+                熟练使用<span>HTML（5）+CSS（3）</span>，并结合<span>Sass/Less</span>预处理器对原稿进行还原；
+              </li>
+              <li>
+                能使用移动端布局<span>Less+rem+媒体查询</span>和<span>flex</span>弹性布局，以及响应式布局<span>bootstrap</span>栅格系统；
+              </li>
+              <li>
+                熟练掌握<span>Javascript</span>与<span>JQuery</span>，并能运用<span>ES6、ES7</span>等高阶语法进行高效开发；
+              </li>
+              <li>
+                能使用<span>nodejs</span>的框架<span>express</span>，并能结合使用<span>
+                  mongoose</span
+                >进行数据存储；
+              </li>
+              <li>
+                熟练掌握<span>Vue2全家桶</span>，并能结合<span>element-ui</span>以及<span>echarts</span>可视化进行开发，了解<span>webpack</span>的基本使用；
+              </li>
+              <li>
+                熟练掌握<span>React</span>框架以及<span>redux</span>的使用
+                ，能结合<span>ant-design</span>进行开发；
+              </li>
+              <li>
+                熟练使用<span>微信小程序</span>以及<span>uniapp</span>进行开发；
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="common">
+          <div class="common_title"><h3>项目经验</h3></div>
+          <div class="program">
+            <p>
+              <span>项目一：</span>
+              Vue电商后台管理系统  (2021-10-11——2021-12-7)
+            </p>
+            <p><span>项目环境：</span>Vue2+Eliment-ui+axios+echarts</p>
+            <p>
+              <span>项目功能：</span>
+              用户登录，用户管理，用户权限管理，商品添加及图片上传，商品动静态参数管理，商品三级分类，订单状态管理，
+            </p>
+            <p>
+              <span>项目职责：</span
+              >该项目为独立项目由本人独立完成，通过效果图完成的一个小项目，并对一些功能进行了完善，代码已经上传到GitHub<br />
+            </p>
+            <p>
+              <span>主要技术：</span>
+              <ul>
+                <li>1.该项目通过运用vue2的框架结合Element-ui组件库按需引入进行开发；</li>
+                <li>2.利用正则运算对登录以及一些数据的添加进行确认；</li>
+                <li>3.通过路由导航守卫判断是否获取token值，进行登录跳转；</li>
+                <li>4.利用axios拦截器增加进度条，以及对请求头添加token权限；</li>
+                <li>5.通过外部cdn对于较大的依赖进行引入，减小项目的打包大小。</li>
+              </ul>
+            </p>
+  
+              <p><span>问题以及解决方法：</span>
+            echarts表格需要在生命周期mounted里获得ref页面元素渲染到页面上，而初始数据在created中存储到了data中，
+            mounted无法获取data中的数据。原因在于mounted不会等待created异步函数执行后在渲染页面，可以通过nextick对数据进行
+             获取或者增加定时器等待created的完成。
+            </p>
+          </div>
+          <div class="program">
+            <p>
+              <span>项目二：</span>
+              微信小程序商城 (2021-06-11——2021-07-20)
+            </p>
+            <p>
+              <span>项目功能：</span>
+              商城拥有主页，商品列表列，商品详情页，能够对商品进行收藏以及添加到购物车页面，并能进行登录操作。
+            </p>
+            <p>
+              <span>项目职责：</span
+              >该项目为独立项目由本人独立完成，代码已经上传到GitHub<br />
+            </p>
+            <p>
+              <span>主要技术：</span>
+              <ul>
+                <li>1.由于微信小程序的大多数接口不支持Promise，由此对大多数接口进行promise封装；</li>
+                <li>2.通过父组件监听子组件触发机制，创建搜索、tab分段器组件；</li>
+              </ul>
+            </p>
+            <p><span>问题以及解决方法：</span>解决同个页面左右两个scroll-view同步滚动问题，在标签中加入height:cal(100vh),原因在于手机端出现了多余的滑动空间
+            </p>
+          </div>
+        </div>
+        <div class="common">
+          <div class="common_title"><h3>自我评价</h3></div>
+          <p class="footer">自学能力强，能快速接受使用新知识。良好的分析解决问题能力，并把问题解决方案记录下来；具有面向对象设计思想，具备独立分析和解决问题的能力；有较好的团队协作和沟通能力，有强烈的责任心；具有良好的沟通表达、团队协作能力，有较强的学习能力和探索精神，责任心强。</p>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>
